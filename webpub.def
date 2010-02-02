@@ -3,7 +3,7 @@
 # -----------------------------------------------------
 #
 #
-# converted by cvpubdef from HOLDINGS_POS: atpeR
+# converted by cvpubdef from HOLDINGS_POS: atpe
 #
 #
 # converted from HOLDINGS_POS field tag: 'a'
@@ -29,8 +29,9 @@ b|e||-6|Edition||b|
 # end HOLDINGS_POS
 #
 #
-# next line added by cvpubdef
-b|H|||||&nbsp;
+# next lines added by cvpubdef
+b|H|||||
+b|T|||||
 #
 b|r|306|-6|||b|
 b|r|307|-6|||b|
