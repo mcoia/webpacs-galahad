@@ -206,7 +206,7 @@ SIMILAR_ITEMS=false
 #TABLEPARAM_BIB_PAGER=align="center" border="0"
 #TABLEPARAM_BIB_THUMBNAILS=align="center" cellspacing="1" cellpadding="2"
 #TABLEPARAM_BIB_TOC=border="0" cellspacing="1"
-WEBPUBDEF=true
+#WEBPUBDEF=true
 
 # REFERENCE DATABASE OPTIONS 
 
@@ -359,14 +359,4 @@ BUT_Z39_REQUEST=/screens/b_request.gif
 BUT_Z39SEARCH=/screens/b_z39srch.gif
 
 #BRIEFCIT OPTIONS
-#TABLEPARAM_BRIEFCIT=Y|
-TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
-
-# Webpac Pro
-BROWSE50=true
-ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;Most relevant titles&nbsp; 
-ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;Highly relevant titles&nbsp; 
-ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;Very relevant titles&nbsp; 
-ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;Relevant titles&nbsp; 
-ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;Other relevant titles&nbsp;
-
+TABLEPARAM_BRIEFCIT=Y|
