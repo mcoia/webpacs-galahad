@@ -43,24 +43,24 @@ b|r|350|-6|||b|
 b|r|359|-6|||b|
 b|r|362|-6|Publication Dates||b|
 b|r||-6|Descript||b|
-b|s|^4901|-6|||b|
+b|s|4901|-6|||b|
 b|s||-6|Series||b|
 b|n|506|-6|Restrictions||b|
 b|n|508|-6|Credits||b|
-b|n|^510|-6|||b|
-b|n|^5111|-6|Cast||b|
-b|n|^5112|-6|Presenter||b|
-b|n|^5113|-6|Narrator||b|
-b|n|^520|-6|Summary||b|
-b|n|^5210|-6|Reading Level||b|
-b|n|^5211|-6|Age Level||b|
-b|n|^521|-6|Audience||b|
-b|n|^522|-6|||b|
-b|n|^524|-6|||b|
-b|n|^5260|-6|Reading Program||b|
-b|n|^533|-6|Reproduction||b|
-b|n|^5351|-6|Original At||b|
-b|n|^5352|-6|||b|
+b|n|510|-6|||b|
+b|n|5111|-6|Cast||b|
+b|n|5112|-6|Presenter||b|
+b|n|5113|-6|Narrator||b|
+b|n|520|-6|Summary||b|
+b|n|5210|-6|Reading Level||b|
+b|n|5211|-6|Age Level||b|
+b|n|521|-6|Audience||b|
+b|n|522|-6|||b|
+b|n|524|-6|||b|
+b|n|5260|-6|Reading Program||b|
+b|n|533|-6|Reproduction||b|
+b|n|5351|-6|Original At||b|
+b|n|5352|-6|||b|
 b|n|539|-6|||b|
 b|n|541|-6|||b|
 b|n|544|-6|||b|
@@ -79,14 +79,14 @@ b|v|599|-z6|||b|
 b|v||-z6|Local Note||b|
 b|f|970|-6|||b|
 b|f||-6|Contents||b|
-b|x|^78001|-6|Continues In Part||b|
-b|x|^78002|-6|Supersedes||b|
-b|x|^78003|-6|Supersedes In Part||b|
-b|x|^78004|-6|Merger Of||b|
-b|x|^78005|-6|Absorbed||b|
-b|x|^78006|-6|Absorbed In Part||b|
-b|x|^78007|-6|Split From||b|
-b|x|^7801|-6|||b|
+b|x|78001|-6|Continues In Part||b|
+b|x|78002|-6|Supersedes||b|
+b|x|78003|-6|Supersedes In Part||b|
+b|x|78004|-6|Merger Of||b|
+b|x|78005|-6|Absorbed||b|
+b|x|78006|-6|Absorbed In Part||b|
+b|x|78007|-6|Split From||b|
+b|x|7801|-6|||b|
 b|x||-6|Continues||b|
 b|z|78500|-6|Continued By||b|
 b|z|78501|-6|Continued In Part By||b|
@@ -100,22 +100,22 @@ b|z|78508|-6|Changed Back To ||b|
 b|z||-6|Cont'd By||b|
 b|q||-6|Related To||b|
 b|d||-26|LC SUBJECT||b|
-b|m|^600.1|-26|Children's Subject||b|
-b|m|^610.1|-26|Children's Subject||b|
-b|m|^611.1|-26|Children's Subject||b|
-b|m|^630.1|-26|Children's Subject||b|
-b|m|^650.1|-26|Children's Subject||b|
-b|m|^651.1|-26|Children's Subject||b|
+b|m|600.1|-26|Children's Subject||b|
+b|m|610.1|-26|Children's Subject||b|
+b|m|611.1|-26|Children's Subject||b|
+b|m|630.1|-26|Children's Subject||b|
+b|m|650.1|-26|Children's Subject||b|
+b|m|651.1|-26|Children's Subject||b|
 b|m||-26|Child Subj||b|
-b|b|^700.2|-6|Includes||b|
+b|b|700.2|-6|Includes||b|
 b|b|700|-6|Other Author||b|
-b|b|^710.2|-6|Includes||b|
-b|b|^710|-6|Other Author||b|
-b|b|^711.2|-6|Includes||b|
+b|b|710.2|-6|Includes||b|
+b|b|710|-6|Other Author||b|
+b|b|711.2|-6|Includes||b|
 b|b|711|-6|Meeting||b|
-b|b|^730.2|-6|Includes||b|
+b|b|730.2|-6|Includes||b|
 b|b|730|-6|Other Title||b|
-b|b|^740.2|-6|Includes||b|
+b|b|740.2|-6|Includes||b|
 b|b|740|-6|Other Title||b|
 b|b||-6|Add Author||b|
 b|u|130|-6|Uniform Title||b|
@@ -124,35 +124,35 @@ b|u|214|-6|Other Title||b|
 b|u|222|-6|Key Title||b|
 b|u|242|-6|Translation||b|
 b|u|243|-6|Other Title||b|
-b|u|^246.0|-6|Other Title||b|
-b|u|^246.1|-6|Other Title||b|
-b|u|^246.2|-6|Other Title||b|
-b|u|^246.3|-6|Other Title||b|
-b|u|^246.4|-6|Cover Title||b|
-b|u|^246.5|-6|Other Title||b|
-b|u|^246.6|-6|Caption Title||b|
-b|u|^246.7|-6|Running Title||b|
-b|u|^246.8|-6|Spine Title||b|
+b|u|246.0|-6|Other Title||b|
+b|u|246.1|-6|Other Title||b|
+b|u|246.2|-6|Other Title||b|
+b|u|246.3|-6|Other Title||b|
+b|u|246.4|-6|Cover Title||b|
+b|u|246.5|-6|Other Title||b|
+b|u|246.6|-6|Caption Title||b|
+b|u|246.7|-6|Running Title||b|
+b|u|246.8|-6|Spine Title||b|
 b|u|24700|-6|||b|
 b|u|24701|-6|||b|
 b|u|24710|-6|Other Title||b|
 b|u|24711|-6|Other Title||b|
 b|u||-6|Add Title||b|
-b|k|^600.[2345678]|-26|Subject||b|
-b|k|^610.[2345678]|-26|Subject||b|
-b|k|^611.[2345678]|-26|Subject||b|
-b|k|^630.[2345678]|-26|Subject||b|
-b|k|^650.[2345678]|-26|Subject||b|
-b|k|^651.[2345678]|-26|Subject||b|
+b|k|600.[2345678]|-26|Subject||b|
+b|k|610.[2345678]|-26|Subject||b|
+b|k|611.[2345678]|-26|Subject||b|
+b|k|630.[2345678]|-26|Subject||b|
+b|k|650.[2345678]|-26|Subject||b|
+b|k|651.[2345678]|-26|Subject||b|
 b|k|655.7|-26|Genre/Form||b|
-b|k|^65[345678]|-26|Subject||b|
+b|k|65[345678]|-26|Subject||b|
 b|k|690|-26|Subject||b|
 b|k|691|-26|Subject||b|
 b|k|752|-26|Place||b|
 b|k|753|-26|Requires||b|
 b|k|755|-26|Characteristics||b|
 b|k||-26|Add Keyword||b|
-b|g|^0860|-6|Sudoc #||b|
+b|g|0860|-6|Sudoc #||b|
 b|g||-6|Gov Doc #||b|
 b|o|019|-c6|||b|
 b|o||-c6|OCLC #||b|
@@ -160,11 +160,11 @@ b|i|020|-c6|ISBN||b|
 b|i|022|-c6|ISSN||b|
 b|i|0242|-c6|Int'l Music #||b|
 b|i|027|-c6|Tech Rept #||b|
-b|i|^0280|-c6|Sound Rec #||b|
-b|i|^0281|-c6|Sound Rec #||b|
-b|i|^0282|-c6|Score Plate #||b|
-b|i|^0283|-c6|Score Pub #||b|
-b|i|^0284|-c6|Video Pub #||b|
+b|i|0280|-c6|Sound Rec #||b|
+b|i|0281|-c6|Sound Rec #||b|
+b|i|0282|-c6|Score Plate #||b|
+b|i|0283|-c6|Score Pub #||b|
+b|i|0284|-c6|Video Pub #||b|
 b|i|030|-c6|Coden #||b|
 b|i|074|-c6|Gpo Item #||b|
 b|i|088|-c6|Tech Rept #||b|
