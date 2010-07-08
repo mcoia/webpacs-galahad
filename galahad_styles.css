@@ -157,6 +157,46 @@ limitSearchTerm { }
 limitSearchTypeIndex { }
 limitSearchTypeText { }
 
+/* OPAC Menu */
+
+#breadcrumb {width:100%; text-align:right;}
+
+#breadcrumb p {margin:0; font-family:Arial, Helvetica, sans-serif; color:#999999;}
+
+#container {
+    width: 100%;
+}
+
+#left {
+    float: left;
+    width: 25%;
+}
+
+#center {
+    float: left;
+    width:50%;
+    text-align:center;
+}
+
+#center h1 {
+    font-size:20px;
+    margin-bottom:4px;
+    margin-top:0px;
+}
+
+#right {
+    float: left;
+    width: 25%;
+    text-align:right;
+    padding-top:1em;
+}
+
+#right table {position:absolute;right:0;}
+    
+.clear {
+    clear: both;
+} 
+
 /* PATRON FUNCTION TABLE AND FORM CLASSES */
 patDisplay { } 
 patDisplayFunc { }
