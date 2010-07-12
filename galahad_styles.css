@@ -169,7 +169,7 @@ limitSearchTypeText { }
 
 #left {
     float: left;
-    width: 25%;
+    width: 24.5%;
 }
 
 #center {
@@ -186,7 +186,7 @@ limitSearchTypeText { }
 
 #right {
     float: left;
-    width: 25%;
+    width: 24.5%;
     text-align:right;
     padding-top:1em;
 }
