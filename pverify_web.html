@@ -3,7 +3,7 @@
 <!--{patron}-->
 <!--{logout}-->
 
-<FORM METHOD=POST>
+<FORM METHOD=POST onSubmit="return formCheck(this)">
 <p>
 <!--{iferrmsg}-->
 <FONT COLOR=RED SIZE=+2><EM>
@@ -65,7 +65,7 @@
 <!--{xif}-->
 <tr><td colspan="2">
 <br>
-<!--{submit}-->
+<input name="submit" type="SUBMIT" value="SUBMIT" />
 </td></tr>
 </TABLE>
 
@@ -110,4 +110,5 @@
 <!--{botlogo}-->
 
 </BODY>
-</HTML>
+</HTML>
+
