@@ -1,5 +1,3 @@
-<!--
-
 body, div, span, p, form, .qs, h1, h2, h3, ul, ol, li, a, td ,th, select, input, textarea
 	{ font-family: Verdana, Arial, Helvetica, sans-serif; }
 tt, pre { font-family: "Courier New", Courier, mono, monospace; }
@@ -259,8 +257,15 @@ wblinkfield { }
 wblinktext { }
 wbresourcelist { } */
 
--->
+/* SMS Feature */
+
+#info, #sms {
+border:1px solid #36647b; position:absolute; top:250; left:50;
+z-index:1000; background:#fff; padding:10px; margin:10px; background:#efefcf; }
+#sms .eg {font-style:italic; font-size:80%; }
+#info {top:500}
+#sms {font-size:70%}
 
 
 
- 
+
