@@ -196,11 +196,11 @@ MARC=yes
 SHOWOREC=no_cdate
 SIMILAR_ITEMS=false
 #TABLEPARAM_BIB=width="100%" cellpadding="2" cellspacing="0" border="0"|cellpadding="2" cellspacing="0" border="0" align="center"
-#TABLEPARAM_BIB_DETAIL=width="100%" border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_DETAIL=id="bib_detail" width="100%" border="0" cellspacing="1" cellpadding="2"
 #TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="1" cellpadding="2"
 #TABLEPARAM_BIB_HOLDS=width="100%" cellspacing="1" cellpadding="2"
 #TABLEPARAM_BIB_INFO=width="100%" border="0" cellspacing="1" cellpadding="2"
-#TABLEPARAM_BIB_ITEMS=width="100%" border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_ITEMS=id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2"
 #TABLEPARAM_BIB_LINKS=width="100%" border="0" cellspacing="1" cellpadding="2"
 #TABLEPARAM_BIB_ORDER=width="100%" cellspacing="1" cellpadding="2"
 #TABLEPARAM_BIB_PAGER=align="center" border="0"
