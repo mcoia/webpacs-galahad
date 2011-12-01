@@ -5,4 +5,57 @@
 <div style="clear:both"></div>
 </div><!-- fullPage -->
 </div><!-- min-height -->
+<script type="text/javascript"> 
+<!--
+// Assign a className to style the user's terms in the header;
+var tableList = document.getElementsByTagName("table");
+browseScreenList =  new Array();
+for (var table = 0; table < tableList.length; table++) {
+    // Get the class
+	classAttrib = tableList[table].getAttribute("class");
+	// Hack for IE
+	if(classAttrib == null) { classAttrib = tableList[table].getAttribute("className") }
+	// Store the table if it holds the label for the OCLC #
+	if(classAttrib == "browseScreen")  {
+		var chgTitle = 1;
+	}
+    }
+var rrClass = "rrUserQuery";
+ 
+// If you also want to put the user's terms in the browser title bar, change these 3 variables;
+var lib_or_cat_name = "Galahad Catalog - "; // This is your library name or catalog name, and should match whatever currently appears in your browser's title bar;
+var title_suff = " search results for " // This text will appear in the title bar after the user's terms;
+ 
+// No need to edit beyond here;
+if (!document.getElementsByName('searcharg')[0]) {}
+else {
+	var rrForm = document.getElementsByName('searcharg')[0];
+	var termArr = [];
+	termArr[0] = "rrTerm1";
+	termArr[1] = "rrTerm2";
+	termArr[2] = "rrTerm3";
+	termArr[3] = "rrTerm4";
+	termArr[4] = "rrTerm5";
+	for (var i=0; i<3; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			termID.innerHTML = rrForm.value;
+			termID.className = rrClass;
+		}
+	}
+	for (var i=3; i<termArr.length; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			newval = rrForm.value.replace(/^\s+|\s+$/g,"");
+			newval = newval.replace(/\s/g," AND ");
+			termID.innerHTML = newval;
+			termID.className = rrClass;
+		}
+	}
+if (chgTitle == 1) { document.title = lib_or_cat_name + title_suff + "'" + rrForm.value + "'"; }
+}
+//-->
+</script> 
 <!-- end botlogo.html file -->
