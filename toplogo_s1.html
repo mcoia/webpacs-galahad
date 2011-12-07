@@ -2,6 +2,7 @@
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 06 Oct 2010 -->
 
+<link rel="stylesheet" type="text/css" href="/screens/styles_s1.css" />
 <link rel="shortcut icon" type="ximage/icon" href="/screens/mac.ico" />
 
 <script type="text/javascript" src="/screens/jquery-1.7.min.js"></script>
@@ -11,20 +12,27 @@
 if (document.body){document.body.className = "bodybg";}
 </script>
 
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+});
+</script>
+
 <div class="minHeight">
 <div class="fullPage">
 
 <div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
 <div class="topLogo">
 
+<div class="topLogoImage">
+<a href="/search/" tabindex="10"><img src="/screens/galahad.png" alt="Galahad"></a>
+</div>
 
-<div class="topLogoSmall">
-<a href="/" tabindex="10"><img src="/screens/galahad.png" alt="Galahad"></a>
+<div class="mobiusLogo">
+<a href="http://mobius.umsystem.edu"><img src="/screens/mobius.gif" alt="MOBIUS Catalog"></a>
 </div>
 
 </div><!--topLogo-->
-
-<div class="topNavClear"></div>
 
 <div class="linkBanner">
 
@@ -38,11 +46,8 @@ if (document.body){document.body.className = "bodybg";}
 
 </div>
 
-<div class="clear"></div>
 
-</div><!--searchNav-->
-<div class="clear"></div>
-
+</div><!--linkBanner-->
 
 <div class="clear"></div>
 
