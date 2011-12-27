@@ -58,9 +58,15 @@ startTimeout(600000, "/");
 <div class="formRight">
 <p>Type as much or as little of the title as you want. For example:</p>
 <ul>
-<li>merchant of venice</li>
-<li>merchant</li>
-<li>merchant</li>
+<li>tale of two cities</li>
+<li>tale of two</li>
+<li>science| <em>(finds one word title: science)</em></li>
+<li>science <em>(finds titles beginning with science)</em></li>
+</ul>
+<p>Do not include an article when it is the first word in the title. For example:</p>
+<ul>
+<li>tale of two cities   <em>NOT</em>   A tale of two cities</li>
+<li>rouge et le noir     <em>NOT</em>   Le rouge et le noir</li>
 </ul>
 </div><!--formRight -->
 
