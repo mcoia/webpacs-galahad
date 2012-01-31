@@ -608,6 +608,10 @@ div .bibResourceSidebar { display:none; }
 
 .fullPage { background:#ffffff; padding:0px; text-align:left; }
 
+#googlebooks { display: none; font-size:.9em; }
+
+#googlebooks img {margin-top:1em; }
+
 .pageContent div.helpContent { padding-bottom:12em; }
 
 .pageContent > table .browseSearchtool em { margin-left:0px; }
