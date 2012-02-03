@@ -324,7 +324,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitActions { margin-bottom:10px; }
 
-.briefcitLeft, .briefcitResourceLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; width:41px; }
+.briefcitLeft, .briefcitResourceLeft { display:inline; float:left; margin-bottom:30px; padding:0; text-align:left; width:54px; }
 
 .briefcitResourceLeft { margin-bottom:20px; }
 
@@ -343,6 +343,8 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 .briefcitItemsHeader h2 { color:#F7960C; font-size:1em; margin:0; }
 
 .briefcitItemsMain { float:left; width:85%; }
+
+.briefcitLeft a { text-decoration:none; }
 
 .briefcitMark { float:right; }
 
