@@ -5,3 +5,7 @@
 .clusterLogo {
     top:10px;
 }
+
+.navRight div {
+    display:inline;
+}
