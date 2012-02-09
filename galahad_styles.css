@@ -280,5 +280,13 @@ wbresourcelist { } */
 #sms {font-size:70%}
 
 
+#redirectMessage {
+    margin:1em;
+    font-size:1.2em;
+}
+
+#redirectMessage a {
+    font-weight:bold;
+}
 
 
