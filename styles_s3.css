@@ -20,6 +20,10 @@
     font-family:Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
 }
 
+.minHeight {
+    width:100%;
+}
+
 .navRight {
     float:right;
 }
