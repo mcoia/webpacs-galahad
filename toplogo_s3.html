@@ -2,25 +2,30 @@
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 06 Oct 2010 -->
 
-<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" />
-
 <script type="text/javascript" src="/screens/jquery-1.7.min.js"></script>
-<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/domainredirect.js"></script>
 <script type="text/javascript" src="/screens/mobileredirect.js"></script>
+<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
 <script type="text/javascript" src='/screens/sms.js'> </script>
-<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
-<script type="text/javascript">
-if (document.body){document.body.className = "bodybg";}
-</script>
-
 <script type="text/javascript">
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+	//$('#searchtype').change(function(){
+    	//$("#exampleText").load("screens/" + this.value + ".inc");
+	//});
+	//Changes the search examples
 	$('#b option:not([value^="t"])').hide(); //Hides the out-of-scope locations
 	$('#b option[value=""]').show(); //Shows the any location for the scopes
 });
 </script>
+
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/screens/styles_s3.css" />
 
 <div class="minHeight">
 <div class="fullPage">
@@ -50,8 +55,6 @@ $(document).ready(function () {
 </div>
 <div class="topLogo">
 
-
-
 <div class="topLogoImage">
 <a href="/search" tabindex="10"><img src="/screens/kent.png" alt="Kent Library Catalog"></a>
 </div>
@@ -59,6 +62,8 @@ $(document).ready(function () {
 <div class="clusterLogo">
 <a href="/" tabindex="10"><img src="/screens/semo.png" alt="Southeast Missouri State University"></a>
 </div>
+
+<div id="alertMessage"></div>
 
 </div><!--topLogo-->
 
