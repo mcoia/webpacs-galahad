@@ -15,4 +15,8 @@
     left:38.5%;
 }
 
+#searchscope, #searchscopeLabel, .formScopeSearch {
+    display:none;
+}
+
 
