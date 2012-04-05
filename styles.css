@@ -624,6 +624,8 @@ div .bibResourceSidebar { display:none; }
 
 #googlebooks img {margin-top:1em; }
 
+.googlebooks { display:none; }
+
 .pageContent div.helpContent { padding-bottom:12em; }
 
 .pageContent > table .browseSearchtool em { margin-left:0px; }
