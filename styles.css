@@ -510,6 +510,8 @@ span.buttonText:hover {text-decoration:underline;}
 
 .checkinInfoHoldingsLabel { height:auto; width: 19%; font-weight:bold; text-align:right; }
 
+.clusterLogo {width:300px;}
+
 .ecommerceFormDone { background:#ffffff; margin-left:auto; margin-right:auto; padding:0px; text-align:left; width:97%; padding-bottom:12em; }
 
 .ecommerceFormDone > div, .ecommerceFormDone > span { margin:10px 20px 15px; }
@@ -1075,7 +1077,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogoImage { padding:8px 10px; }
 
-.topLogoImage, .mobiusLogo, .clusterLogo {width:250px;}
+.topLogoImage, .mobiusLogo {width:250px;}
 
 .topLinks { float: right; height: auto; margin:0; padding:0; width: 50%; }
 
