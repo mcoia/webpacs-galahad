@@ -207,9 +207,11 @@ a:hover  { color: #7C14B8; }
 
 .bibLinks th { text-align:center; }
 
-.bibMedia  { margin-left:auto; margin-right:auto; }
+.bibMedia  { margin-left:auto; margin-right:auto; margin-top:0; }
 
 .bibMedia   img { margin-top:10px;  }
+
+.bibDisplayJacket  { width:145px; text-align:center; margin:0; }
 
 .bibDisplayPermLink { float:right; }
 
@@ -358,7 +360,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitMark { float:right; }
 
-.briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:41px; text-align:center; }
+.briefcitMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:41px; text-align:center; }
 
 .briefcitResourceMedia, .briefcitProgramMedia { margin-top:3em; }
 
@@ -622,7 +624,7 @@ div .bibResourceSidebar { display:none; }
 
 .fullPage { background:#ffffff; padding:0px; text-align:left; }
 
-#googlebooks { display: none; font-size:.9em; }
+#googlebooks { display: block; font-size:.9em; }
 
 #googlebooks img {margin-top:1em; }
 
