@@ -1,0 +1,124 @@
+<!-- begin botlogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: Sept 2009 -->
+</div><!-- pageContent  -->
+<div style="clear:both"></div>
+<div id="botlogo">
+<p><strong>Galahad</strong> includes the collections of the following Southeast Missouri libraries:</p>
+<p><a href="/search~S1">Mineral Area College</a> | <a href="/search~S2">Three Rivers College</a> | <a href="/search~S3">Southeast Missouri State University</a> </p>
+</div>
+</div><!-- fullPage -->
+</div><!-- min-height -->
+<script type="text/javascript"> 
+<!--
+// Assign a className to style the user's terms in the header;
+var tableList = document.getElementsByTagName("table");
+browseScreenList =  new Array();
+for (var table = 0; table < tableList.length; table++) {
+    // Get the class
+	classAttrib = tableList[table].getAttribute("class");
+	// Hack for IE
+	if(classAttrib == null) { classAttrib = tableList[table].getAttribute("className") }
+	// Store the table if it holds the label for the OCLC #
+	if(classAttrib == "browseScreen")  {
+		var chgTitle = 1;
+	}
+    }
+var rrClass = "rrUserQuery";
+ 
+// If you also want to put the user's terms in the browser title bar, change these 3 variables;
+var lib_or_cat_name = "Galahad Catalog - "; // This is your library name or catalog name, and should match whatever currently appears in your browser's title bar;
+var title_suff = " search results for " // This text will appear in the title bar after the user's terms;
+ 
+// No need to edit beyond here;
+if (!document.getElementsByName('searcharg')[0]) {}
+else {
+	var rrForm = document.getElementsByName('searcharg')[0];
+	var termArr = [];
+	termArr[0] = "rrTerm1";
+	termArr[1] = "rrTerm2";
+	termArr[2] = "rrTerm3";
+	termArr[3] = "rrTerm4";
+	termArr[4] = "rrTerm5";
+	for (var i=0; i<3; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			termID.innerHTML = rrForm.value;
+			termID.className = rrClass;
+		}
+	}
+	for (var i=3; i<termArr.length; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			newval = rrForm.value.replace(/^\s+|\s+$/g,"");
+			newval = newval.replace(/\s/g," AND ");
+			termID.innerHTML = newval;
+			termID.className = rrClass;
+		}
+	}
+if (chgTitle == 1) { document.title = lib_or_cat_name + title_suff + "'" + rrForm.value + "'"; }
+}
+//-->
+</script>
+
+<script type='text/javascript'>
+    var ProcessResults = function(bookInfo) {
+        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
+        var textGBS = "";
+        for (ISBN in bookInfo) {
+            var b = bookInfo[1401302203];
+            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
+            //form the text of Google Book contents
+            if (b && (b.preview == "full")) {
+                textGBS = "<p>Full Text</p>";
+                //"Google Book Search";
+                $(".googlebooks").html(bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>")
+            }
+            else if (b && (b.preview == "partial")) {
+                textGBS = "<p>Limited Preview</p>"
+                //"Preview at Google Book Search";
+		$(".googlebooks").html(bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>")
+            }
+            else if (b && (b.preview == "noview")) {
+                //"Preview at Google Book Search";
+                if (b.thumbnail_url != undefined){
+		
+                $(".googlebooks").html(bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>")
+                }
+            }
+            else {
+                //document.getElementById("googlebooks").innerHTML = "None available.";
+            }
+    }
+}
+
+</script>
+
+<script type='text/javascript'>
+
+var ISBN = new Array();
+
+$(".googlebooks").each(function(index) {
+    
+    ISBN.push($(".googlebooks:eq(" + index + ")").html().replace(/[^0123456789]/g,""));
+
+});
+var ISBNlist = ISBN.join();
+
+var cburl = "http://books.google.com/books";
+// Retrieve the info for these bibkeys
+
+var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBNlist;
+var s = document.createElement("script");
+s.setAttribute("type", "text/javascript");
+//alert("searching for: " + ISBN);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBNlist + "&callback=ProcessResults");
+document.documentElement.firstChild.appendChild(s);
+
+</script>
+<!-- end botlogo.html file -->
+
+<link rel="shortcut icon" type="ximage/icon" href="/screens/mac.ico" />
+<!-- end botlogo.html file -->

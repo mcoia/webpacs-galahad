@@ -1,0 +1,16 @@
+.linkBanner {
+    background-color:#CC0000;
+}
+
+.macLogo {
+    width:169px;
+    position:absolute;
+    top:10px;
+    left:38.5%;
+}
+
+#searchscope, #searchscopeLabel, .formScopeSearch {
+    display:none;
+}
+
+

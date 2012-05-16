@@ -1,95 +1,82 @@
-<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
-
-
-
-
-<HTML>
-<HEAD>
-	<TITLE>Galahad/ Galahad Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="/screens/galahad_styles.css">
-
-
-
-
-
-</HEAD>
-
-<BODY bgcolor="#ffffff" text="#000000" link="#cc0000" vlink="#cc0000" alink="#cc0000" 
-	onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-<!--{toplogo}-->
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Title Search</b></h3>
-<!--{formbegin}-->
-  <p ALIGN="CENTER">
-    <input TYPE="TEXT" name="SEARCH" maxlength="64" size="48">
-    <input TYPE="SUBMIT" value="Search" name="SUBMIT">
-  </p>
-</form>
-<p>Search here for items by the exact title.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    tale of two cities
-    tale of two
-    science| <i>(finds one word title: science)</i>
-    science <i>(finds titles beginning with science)</i>
-</pre>
-</td></tr>
-
-<tr><td colspan="2"><p>Do not include an article when it is the first word in the title.</p></td></tr>
-
-<tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>   tale of two cities   <i>NOT</i>   <u>A</u> tale of two cities
-   rouge et le noir     <i>NOT</i>   <u>Le</u> rouge et le noir
-</pre>
-</td></tr>
-
-
-
-
-</table>
-<p>If your search is unsuccessful, try a <a href="/search/Y">KEYWORD</a> search. </p>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search~S0"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<center>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr valign="top"> 
-		<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000"> 
-	    	<IMG SRC="/screens/redbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle"> 
-			<a href="/search~S1">Mineral Area College</a> &nbsp; 
-			<IMG SRC="/screens/goldbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle"> 
-			<a href="/search~S2">Three Rivers Community College</a></font></td>
-    </tr>
-	<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="6" WIDTH="1" BORDER="0" ALT=""></td></tr>
-	<tr valign="top">
-		<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000">
-			<IMG SRC="/screens/blackbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle"> 
-	        <a href="/search~S3">Southeast Missouri State University</a></font></td></tr>
-	<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="12" WIDTH="1" BORDER="0" ALT=""></td></tr>
-	<tr>
-		<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000"> 
-                <IMG SRC="/screens/allbullets.gif" HEIGHT="15" WIDTH="55" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle">   
-                <a href="/search~">Search all Galahad Libraries</a></font></td>
-	</tr>
-	<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="18" WIDTH="1" BORDER="0" ALT=""></td></tr>
-	<tr valign="top"> 
-            <td align="center"> <font color="#999999" face="Arial, Helvetica, sans-serif" ><b>Galahad 
-                &middot;</b> a MOBIUS Library Catalog</font></td>
-    </tr>
-</table>
-
-</center>
-</BODY>
-</HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Galahad Catalog - Title Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Title Search</h1>
+
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the title you want to find, then press the Enter key or click Submit.</legend>
+-->
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
+</span>
+<!--{search}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+</div><!--formLeft -->
+
+<div class="formRight">
+<p>Type as much or as little of the title as you want. For example:</p>
+<ul>
+<li>tale of two cities</li>
+<li>tale of two</li>
+<li>science| <em>(finds one word title: science)</em></li>
+<li>science <em>(finds titles beginning with science)</em></li>
+</ul>
+<p>Do not include an article when it is the first word in the title. For example:</p>
+<ul>
+<li>tale of two cities   <em>NOT</em>   A tale of two cities</li>
+<li>rouge et le noir     <em>NOT</em>   Le rouge et le noir</li>
+</ul>
+</div><!--formRight -->
+
+</div><!--form2Part -->
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
