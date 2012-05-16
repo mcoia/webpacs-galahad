@@ -1,29 +1,80 @@
-<center>
+<!-- begin botlogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: Sept 2009 -->
+</div><!-- pageContent  -->
+<div style="clear:both"></div>
+<div id="botlogo">
+<p><strong>Galahad</strong> includes the collections of the following Southeast Missouri libraries:</p>
+<p><a href="/search~S1">Mineral Area College</a> | <a href="/search~S2">Three Rivers College</a> | <a href="/search~S3">Southeast Missouri State University</a> </p>
+</div>
+</div><!-- fullPage -->
+</div><!-- min-height -->
+<script type="text/javascript"> 
+<!--
+// Assign a className to style the user's terms in the header;
+var tableList = document.getElementsByTagName("table");
+browseScreenList =  new Array();
+for (var table = 0; table < tableList.length; table++) {
+    // Get the class
+	classAttrib = tableList[table].getAttribute("class");
+	// Hack for IE
+	if(classAttrib == null) { classAttrib = tableList[table].getAttribute("className") }
+	// Store the table if it holds the label for the OCLC #
+	if(classAttrib == "browseScreen")  {
+		var chgTitle = 0;
+	}
+    }
+var rrClass = "rrUserQuery";
+ 
+// If you also want to put the user's terms in the browser title bar, change these 3 variables;
+var lib_or_cat_name = "Galahad Catalog - "; // This is your library name or catalog name, and should match whatever currently appears in your browser's title bar;
+var title_suff = " search results for " // This text will appear in the title bar after the user's terms;
+ 
+// No need to edit beyond here;
+if (!document.getElementsByName('searcharg')[0]) {}
+else {
+	var rrForm = document.getElementsByName('searcharg')[0];
+	var termArr = [];
+	termArr[0] = "rrTerm1";
+	termArr[1] = "rrTerm2";
+	termArr[2] = "rrTerm3";
+	termArr[3] = "rrTerm4";
+	termArr[4] = "rrTerm5";
+	for (var i=0; i<3; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			termID.innerHTML = rrForm.value;
+			termID.className = rrClass;
+		}
+	}
+	for (var i=3; i<termArr.length; i++) {
+		var termID = document.getElementById(termArr[i]);
+		if (!termID) {}
+		else {
+			newval = rrForm.value.replace(/^\s+|\s+$/g,"");
+			newval = newval.replace(/\s/g," AND ");
+			termID.innerHTML = newval;
+			termID.className = rrClass;
+		}
+	}
+if (chgTitle == 1) { document.title = lib_or_cat_name + title_suff + "'" + rrForm.value + "'"; }
+}
+//-->
+</script>
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript">
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr valign="top"> 
-		<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000"> 
-	    	<IMG SRC="/screens/redbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle"> 
-			<a href="/search~S1">Mineral Area College</a> &nbsp; 
-			<IMG SRC="/screens/goldbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle"> 
-			<a href="/search~S2">Three Rivers Community College</a></font></td>
-    </tr>
-	<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="6" WIDTH="1" BORDER="0" ALT=""></td></tr>
-	<tr valign="top">
-		<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000">
-			<IMG SRC="/screens/blackbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle"> 
-	        <a href="/search~S3">Southeast Missouri State University</a></font></td></tr>
-	<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="12" WIDTH="1" BORDER="0" ALT=""></td></tr>
-	<tr>
-		<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000"> 
-                <IMG SRC="/screens/allbullets.gif" HEIGHT="15" WIDTH="55" ALT="" BORDER="0" class="archway_styles.css" align="absmiddle">   
-                <a href="/search~">Search all Galahad Libraries</a></font></td>
-	</tr>
-	<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="18" WIDTH="1" BORDER="0" ALT=""></td></tr>
-	<tr valign="top"> 
-            <td align="center"> <font color="#999999" face="Arial, Helvetica, sans-serif" ><b>Galahad 
-                &middot;</b> a MOBIUS Library Catalog</font></td>
-    </tr>
-</table>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16157841-1']);
+  _gaq.push(['_trackPageview']);
 
-</center>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</script>
+<!-- end botlogo.html file -->

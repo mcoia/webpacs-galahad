@@ -1,80 +1,92 @@
-<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<head>
-    <title>Galahad Library Catalog - Welcome</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="/screens/galahad_styles.css">
-<script type="text/javascript">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>Galahad Catalog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16157841-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
 </script>
+</head>
+<body>
+<!--{toplogo}-->
 
-<script type="text/javascript" src="/screens/jquery-1.7.1.min.js"></script>
+<div class="pageContentInner mainSearch">
 
-<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<h1 class="accessibleAddInfo">Search</h1>
 
-<script type="text/javascript" src="/screens/domainredirect.js"></script>
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
 
-<script type="text/javascript" src="/screens/mobileredirect.js"></script>
 
+<input type="hidden" id="iiiFormHandle_1">
 
-</head>
-
-<BODY bgcolor="#ffffff" text="#000000" link="#cc0000" vlink="#cc0000" alink="#cc0000">
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-        <td align="right" valign="top" nowrap><font  face="Arial, Helvetica, sans-serif" color="#999999">search: 
-            <a href="http://searchmobius.org/search/">MOBIUS</a> &gt; 
-			<a href="/search~">Galahad</a></font></td>
-    </tr>
-</table>
-
-
-
-<center>
-	<p><IMG SRC="/screens/galahad.gif" HEIGHT="119" WIDTH="289" ALT=" Galahad - a MOBIUS Library Catalog " BORDER="0" ></p>
-	<p><font face="Arial, Helvetica, sans-serif">The Galahad Library Catalog searches the collections of the academic libraries listed below:</font></p>
-	<hr noshade>
-	<p><font face="Arial, Helvetica, sans-serif" size=-1>Click on a name to begin searching...</p>
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-	    <tr valign="top"> 
-            <td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000"> 
-                <IMG SRC="/screens/redbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" align="absmiddle"> 
-                <a href="/search~S1">Mineral Area College</a> &nbsp; 
-				<IMG SRC="/screens/goldbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" align="absmiddle"> 
-                <a href="/search~S2">Three Rivers Community College</a></font></td>
-	    </tr>
-		<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="6" WIDTH="1" BORDER="0" ALT=""></td></tr>
-		<tr valign="top">
-			<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000">
-				<IMG SRC="/screens/blackbullet.gif" HEIGHT="15" WIDTH="15" ALT="" BORDER="0" align="absmiddle"> 
-		        <a href="/search~S3">Southeast Missouri State University</a></font></td></tr>
-		<tr><td><IMG SRC="/screens/shim.gif" HEIGHT="12" WIDTH="1" BORDER="0" ALT=""></td></tr>
-		<tr>
-			<td align="center" valign="middle" nowrap><font face="Arial, Helvetica, sans-serif" color="#000000"> 
-                <IMG SRC="/screens/allbullets.gif" HEIGHT="15" WIDTH="55" ALT="" BORDER="0" align="absmiddle"> 
-                <a href="/search~">Search all Galahad Libraries</a></font></td>
-		</tr>
-	</table><br>
-	<hr noshade>
-	<p>
-	<font face="Arial, Helvetica, sans-serif">
-	<a href="http://searchmobius.org/screens/about_mobius.html" target="_blank">About MOBIUS</a>
-	</font>
-	</p>
-	
-
-</center>
-
-</BODY>
-</HTML>
+<!-- Optional legend:
+<fieldset>
+<legend>Type the search term you want to find.</legend>-->
+<div class="formEntryArea">
+<div class="inlineBlock">
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" id="searchtype">
+<option value="X" selected="selected">Keyword</option>
+<option value="t">Title</option>
+<option value="s">Journal Title</option>
+<option value="a">Author</option>
+<option value="d">Subject</option>
+<option value="y">Resource Name</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="20" >
+</div>
+<div class="inlineBlock">
+<label for="scope" class="accessibleAddInfo">Location</label>
+<!--{scope}-->
+<span class="formButtonArea">
+
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+<input type="submit" class="submitHidden">
+
+</span>
+</div>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+<!--{botlogo}-->
+</div><!--pageContentInner -->
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
