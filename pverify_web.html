@@ -1,114 +1,112 @@
 <!--{toplogo}-->
-
-<!--{patron}-->
-<!--{logout}-->
-
-<FORM METHOD=POST onSubmit="return formCheck(this)">
-<p>
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
 <!--{iferrmsg}-->
-<FONT COLOR=RED SIZE=+2><EM>
+<span class="errormessage">
 <!--{iferrmsgisPIN}-->
 <!--{newpinmsg}-->
 <!--{else}-->
 <!--{errmsg}-->
 <!--{xif}-->
-</EM></FONT><BR><BR><BR>
+</span>
 <!--{xif}-->
-<!--{enterinfo}--></p>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr>
-<td valign="top" width="1%">
 
-<TABLE>
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
 <!--{ifneedpatronname}-->
-<TR><TD WIDTH=1%></TD><TD class="blurb">
-<!--{nameexample}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+<div class="formEntryArea">
 <!--{nameprompt}-->
-</TD><TD>
 <!--{name}-->
-</TD></TR>
-<tr><td colspan="3">&nbsp;</td></tr>
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</div>
 <!--{xif}-->
+
 <!--{ifneedpatronverify}-->
-<TR><TD width="1%"></TD><TD class="blurb">
-<!--{barcodeexample}-->
-</TD></TR>
-<TR><TD class="blurb" width="1%" nowrap>
+<div class="formEntryArea">
 <!--{barcodeprompt}-->
-</TD><TD>
 <!--{barcode}-->
-</TD></TR>
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
+
 <!--{ifneedspin}-->
+
 <!--{iferrmsgisPIN}-->
-<TR><TD COLSPAN=2>
+<p>
 <!--{newpinmsg}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+</p>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
 <!--{pin1prompt}-->
-</TD><TD>
+</span>
 <!--{pin1}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
 <!--{pin2prompt}-->
-</TD><TD>
+</span>
 <!--{pin2}-->
-</TD></TR>
+<!-- </label> -->
+</div>
+
 <!--{else}-->
-<TR><TD></TD><TD class="blurb">
-<!--{pininstructions}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+<div class="formEntryArea">
 <!--{pinprompt}-->
-</TD><TD>
 <!--{pin}-->
-</TD></TR>
+<span class="formLabelExample">
+<!--{pininstructions}-->
+</span>
+</div>
+
 <!--{xif}-->
 <!--{xif}-->
 <!--{xif}-->
-<tr><td colspan="2">
-<br>
-<input name="submit" type="SUBMIT" value="SUBMIT" />
-</td></tr>
-</TABLE>
 
-</td>
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
 
-<td valign="top" align="right">
-<table width="290" border="0" cellspacing="0" cellpadding="2" bgcolor="#EFEBDB">
-  <tr> 
-    <td> 
-      <p><b><font  face="Arial, Helvetica, sans-serif">Campus ID Help</font></b></p>
-      <p class="blurb"><font size="-1" face="Arial, Helvetica, sans-serif">
-		&middot; Mineral Area College - <b>MAC</b><br>
-		&middot; Three Rivers Community College - <b>TRCC</b><br>
-		&middot; Southeast Missouri State University - <b>SEMO</b></p>
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
 
-	  <p class="blurb"><font size="-1" face="Arial, Helvetica, sans-serif">
-	&nbsp;&nbsp;&nbsp; Type your ID number (dashes are not necessary) plus your institution code.
-	  <br>&nbsp;&nbsp;&nbsp; Examples: <font color="#CC0000" FACE="Verdana"><b>123456789MAC</b></font> would be a Campus 
-        ID for a student at Mineral Area College
-	   <br>&nbsp;&nbsp;&nbsp;<br><font color="#CC0000" FACE="Verdana"><b>S12345678SEMO</b></font> would be a Campus 
-	        ID for a student at Southeast Missouri State University
-	   <br>&nbsp;&nbsp;&nbsp;<br><font color="#CC0000" FACE="Verdana"><b>1234567TRCC</b></font> would be a Campus 
-	        ID for a student at Three Rivers Community College</font></p>
-	<br>
-      </td>
-  </tr>
-</table>
+</div>
 
-</td>
-</tr>
-</table>
-
-<P>
-
-</FORM>
-<TABLE WIDTH=100%>
-<TR><TD>
-<!--{startover}-->
-</TD></TR>
-</TABLE>
-
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
-
-</BODY>
-</HTML>
-
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>

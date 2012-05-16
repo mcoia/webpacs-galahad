@@ -47,7 +47,7 @@ if(!strstr($catalogItemPage, $callNumber) || !strstr($catalogItemPage, $location
 
 //defined variables. Set the from address and subject as desired
 $fromAddress 	= 'NoReply@galahad.searchmobius.org';
-$subject 		= "Galahad Library Catalog";
+$subject 		= "Training Library Catalog";
 
 $providers = array(	'att' 	        => '@txt.att.net',
              		'northwest' 	=> '@mynwcell.com',
