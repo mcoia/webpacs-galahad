@@ -3,7 +3,7 @@
 <!-- Rel 2009B Example Set -->
 <!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>Galahad - Course Reserves Search</title>
+<title>Galahad - Genre Search</title>
 <script language="JavaScript">
 <!-- Hide the JS
 startTimeout(600000, "/");
@@ -20,53 +20,61 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <div class="pageContentInner">
 
-<h1 class="pageHeader">Course Reserves</h1>
+<h1 class="pageHeader">Genre</h1>
 
-<div id="accessibleForm" class="form1Part">
-
-<form method="get" id="search" name="search" action="/search/p">
-
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
+<form method="get">
 <fieldset>
-
-<legend>Type as much of the instructor's name as you want.  For example: Smith or Smith, Brian</legend> 
-
-
+<!-- Optional legend:
+<legend>Type the subject you want to find, then press the Enter key or click Submit.</legend>
+-->
 <div class="formEntryArea">
 <span class="formLabel">
-<label for="SEARCH">Instructor name:</label>
+<label for="SEARCH">Search for:</label>
 </span>
 <!--{search}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
 </div>
 
 <div class="formButtonArea">
 <!--{submit}-->
 </div>
-
 </fieldset>
 </form>
+</div><!--formLeft -->
 
-<hr />
+<div class="formRight">
+<p>Type as much of the genre as you want. For example:</p>
+<ul>
+<li>Children's Stories</li>
+<li>Detective and Mystery Stories</li>
+<li>Fantasy Fiction</li>
+<li>Comedy Films</li>
+</ul>
+</div><!--formRight -->
 
-<form method="get" id="search" name="search" action="/search/r">
+</div><!--form2Part -->
+</div><!-- pageContentInner -->
 
-<fieldset>
-
-<legend>Type as much of the course name as you want.  For example: nur, eng101, biology</legend>
-
-
-<div class="formEntryArea">
-<span class="formLabel">
-<label for="SEARCH">Course name:</label>
-</span>
-<!--{search}-->
-</div>
-
-<div class="formButtonArea">
-<!--{submit}-->
-</div>
-
-</fieldset>
-</form>
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
 
 
 
@@ -82,4 +90,3 @@ catch(err) {}
 //--><!]]></script>
 </body>
 </html>
-
