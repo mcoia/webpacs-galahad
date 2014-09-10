@@ -23,6 +23,13 @@ $(document).ready(function () {
 	$('#b option:not([value^="s"])').detach(); 
 	selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
+
+	//hides out of scope featured lists
+	var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+	if(pathnameFtList.indexOf('ftlist') > -1){
+		$('.browseEntry:not(:contains("SEMO"))').addClass('hideMe');
+		$(".hideMe").hide();
+	}
 });
 </script>
 
@@ -105,7 +112,7 @@ if (document.body){document.body.className = "bodybg";}
 <li><a href="/search/d">Subject (LC)</a></li>
 <li><a href="/search/m">Children's Subject</a></li>
 <li><a href="/search/j">Genre</a></li>
-<li><a href="/ftlist">New Books</a></li>
+<li><a href="/search~S3/ftlist">New Books</a></li>
 </ul>
         
 </div>
