@@ -30,8 +30,8 @@ $(document).ready(function () {
 		$('.browseEntry:not(:contains("SEMO"))').addClass('hideMe');
 		$(".hideMe").hide();
 		text = $('.ftlistHeader').text();
-		listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{2,3}/m, " ").replace("entries", " ");
-		namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+	    listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("entries", " ");
+	    namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
 	}
 });
 </script>
