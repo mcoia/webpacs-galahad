@@ -78,3 +78,7 @@
     padding-left:30px;
     padding-right:30px;
 }
+.semoMessage {
+  font-weight:bold;
+  color: #c8102e;
+}
