@@ -9,12 +9,17 @@
     left:38.5%;
 }
 
-#searchscope, #searchscopeLabel, .formScopeSearch {
-    display:none;
-}
+
 
 .topLogoImage {
     padding: 57px 15px 15px;
 }
 
+.browseSearchtool  td { border:none; padding: 5px 14px 5px 14px; text-align: center;}
+
+
+.frontLimits {
+    margin: auto;
+    width: 55%;
+}
 

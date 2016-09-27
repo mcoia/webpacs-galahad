@@ -576,6 +576,26 @@ div .bibResourceSidebar { display:none; }
 
 .popupForm h2 { margin: 7px 0 2px; }
 
+.limitBox {
+    padding: 10px;  
+}
+table.limitBox {
+  width:100%; text-align: center;
+}
+tr.limitBox td {
+  text-align: center;
+}
+
+.limitBox label {
+  margin:0 20px 0 10px;
+}
+
+#.frontLimits {width:80%; margin: auto}
+
+.fields td {
+    padding: 2px;
+}
+
 .formButtonArea { margin:3px 0 0 15px; }
 
 .formButtonArea a { text-decoration:none; }
@@ -1245,9 +1265,5 @@ tr.highlight { background:#FFFFE4; }
 
 #sms {font-size:70%}
 
-#smsbutton {
-  text-align:center;
-  display:none;
-}
 
 body > div#bibDisplayBody a#smsbutton { display:none; }
