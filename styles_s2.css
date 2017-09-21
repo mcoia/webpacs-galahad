@@ -6,4 +6,11 @@
     top:10px;
 }
 
+.frontLimits {
+    margin: auto;
+    width: 55%;
+}
+
+.frontLimits td {padding: 10px;}
+
 #patButAR { display: none; }
